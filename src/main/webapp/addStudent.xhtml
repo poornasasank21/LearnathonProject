@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Student</title>
+  </h:head>
+    
+  <h:body>
+    
+    <h:messages globalOnly="true" />
+    
+    <h3>Add student</h3>
+    <hr/>
+      <h:form>
+       
+          <h:outputLabel>Student Id :   </h:outputLabel>
+          <h:inputText value="#{sBean.id}" id="id" />
+          <br/><br/>
+            
+          <h:outputLabel>Name :   </h:outputLabel>
+          <h:inputText value="#{sBean.name}" id="name" /><br/><br/>
+            
+          <h:outputLabel>DOB :   </h:outputLabel>
+          <h:inputText value="#{sBean.DOB}" id="DOB" /><br/><br/>
+            
+          <h:outputLabel>Gender :   </h:outputLabel>
+          <h:inputText value="#{sBean.gender}" id="gender" /><br/><br/>
+            
+          <h:outputLabel>Adress :   </h:outputLabel>
+          <h:inputText value="#{sBean.adress}" id="adress" /><br/><br/>
+              
+          <h:outputLabel>phone num :   </h:outputLabel>
+          <h:inputText value="#{sBean.pnum}" id="pnum" /><br/><br/>
+            
+          <h:outputLabel>Email :   </h:outputLabel>
+          <h:inputText value="#{sBean.email}" id="email" /><br/><br/>
+            
+          <h:outputLabel>Password :   </h:outputLabel>
+          <h:inputText value="#{sBean.password}" id="password" /><br/><br/>
+            
+            
+            
+                    
+          <h2>Educational details</h2>
+          <h:outputLabel>University name :   </h:outputLabel>
+          <h:inputText value="#{sBean.university}" id="university" /><br/><br/>
+            
+          <h:outputLabel>joindate :   </h:outputLabel>
+          <h:inputText value="#{sBean.joindate}" id="joindate" /><br/><br/>
+            
+          <h:outputLabel>Ending date :   </h:outputLabel>
+          <h:inputText value="#{sBean.endingdate}" id="endingdate" /><br/><br/>
+            
+          <h:outputLabel>CGPA :   </h:outputLabel>
+          <h:inputText value="#{sBean.cgpa}" id="cgpa" /><br/><br/>
+            
+          <h:outputLabel>Branch :   </h:outputLabel>
+          <h:inputText value="#{sBean.branch}" id="branch" /><br/><br/>
+            
+          <h:outputLabel>About myself :</h:outputLabel>
+          <h:inputText value="#{sBean.aboutme}" id="aboutme" /><br/><br/>
+            
+          <h:outputLabel>Nof intersips ceritified :   </h:outputLabel>
+          <h:inputText value="#{sBean.noofintershipscertidied}" id="noofintershipscertidied" /><br/><br/>
+            
+          <h:outputLabel>No of backlogs :   </h:outputLabel>
+          <h:inputText value="#{sBean.noofbacklogs}" id="noofbacklogs" /><br/><br/>
+            
+          <h:outputLabel>Linkedin url :   </h:outputLabel>
+          <h:inputText value="#{sBean.linkedinurl}" id="linkedinurl" /><br/><br/>
+            
+          <h:outputLabel>About your tech knowldge :   </h:outputLabel>
+          <h:inputText value="#{sBean.technicalskill}" id="technicalskill" /><br/><br/>
+            
+          <h:commandButton value="Save" action="#{sBean.insertemp()}"/>
+          
+          
+
+      </h:form>
+      
+      
+    <h:outputText style="color:red" value="#{empBean.response}"></h:outputText>
+    
+      
+    
+   
+    
+    
+    
+    
+  </h:body>
+</html>

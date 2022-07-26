@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Recuriter Registration</title>
+  </h:head>
+    
+  <h:body>
+    
+    <h:messages globalOnly="true" />
+    
+    <h3>Recuriter Registration</h3>
+    <hr/>
+      <h:form>
+        <h:panelGrid columns="6">
+        
+          <h:outputLabel>ID</h:outputLabel>
+          <h:inputText value="#{rBean.rid}" id="rid" />
+          <br/>
+           <h:outputLabel>Name</h:outputLabel>
+          <h:inputText value="#{rBean.rname}" id="rname" />
+          <br/>
+           <h:outputLabel>Password</h:outputLabel>
+          <h:inputText value="#{rBean.rpass}" id="rpass" />
+          <br/>
+           <h:outputLabel>Company</h:outputLabel>
+          <h:inputText value="#{rBean.company}" id="company" />
+          <br/>
+           <h:outputLabel>Role</h:outputLabel>
+          <h:inputText value="#{rBean.role}" id="role" />
+          <br/>
+           <h:outputLabel>Experience (No of Years)</h:outputLabel>
+          <h:inputText value="#{rBean.exp}" id="exp" />
+          <br/>
+          <h:commandButton value="Save" action="#{rBean.insertemp()}"/>
+
+        </h:panelGrid>
+      </h:form>
+      
+    <br/>
+    <h:outputText style="color:red" value="#{empBean.response}"></h:outputText>
+    
+    <br/>
+    
+  
+    
+    
+   
+    
+  </h:body>
+</html>
